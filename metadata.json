@@ -1,0 +1,6 @@
+{
+  "name": "LedgerFlow - Double-Entry Accounting & Automated Tax Tracking",
+  "description": "QuickBooks-style professional accounting platform powered by double-entry bookkeeping and the REA (Resources, Events, Agents) model with automated tax tracking, invoicing, and real-time financial statements.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
