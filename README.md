@@ -6,6 +6,21 @@ rather than stored separately.
 
 ![Financial dashboard](docs/screenshots/dashboard.png)
 
+## What this repository is
+
+Baseline architecture. The double-entry posting engine, the account type system,
+the derived-statement approach and the view structure here are the foundation
+that much larger client software gets built on top of. What is in this repository
+is the layer that does not change from one build to the next.
+
+A client build keeps this core and adds what that organisation needs: a real
+database behind the ledger, authentication and roles, multi-entity support,
+document storage, an audit trail, and integrations with whatever they already
+run. The accounting model underneath stays as it is, because the accounting does
+not change.
+
+Read it as a structural reference, not as a product.
+
 ## Why it exists
 
 Small organisations get sold accounting software priced for companies ten times
@@ -89,7 +104,8 @@ in the repo at the moment.
 
 ## Honest status
 
-This is a working build, not a shipped product. Specifics worth knowing:
+This is a working build, not a shipped product. The gaps below are the ones a
+client build closes. Specifics worth knowing:
 
 - **The data is fictional.** It seeds from `src/data/sampleData.ts` with a made-up
   company, Apex Cloud & Architecture LLC, and made-up customers. No real financial
